@@ -1,2 +1,2 @@
 # fileshare
-homeassistant文件共享
+这是一个测试中的homeassistant文件共享插件
