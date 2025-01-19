@@ -1,0 +1,35 @@
+list_files:
+  description: List files in a directory
+  fields:
+    path:
+      description: Directory path
+      required: true
+      example: "/shared"
+
+upload_file:
+  description: Upload a file
+  fields:
+    path:
+      description: Destination path
+      required: true
+      example: "/shared/newfile.txt"
+    content:
+      description: File content
+      required: true
+      example: "Hello World"
+
+download_file:
+  description: Download a file
+  fields:
+    path:
+      description: File path
+      required: true
+      example: "/shared/file.txt"
+
+delete_file:
+  description: Delete a file
+  fields:
+    path:
+      description: File path
+      required: true
+      example: "/shared/file.txt"
