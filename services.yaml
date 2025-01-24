@@ -4,7 +4,7 @@ list_files:
     path:
       description: Directory path
       required: true
-      example: "/shared"
+      example: "/config"
 
 upload_file:
   description: Upload a file
@@ -12,7 +12,7 @@ upload_file:
     path:
       description: Destination path
       required: true
-      example: "/shared/newfile.txt"
+      example: "/config/test.txt"
     content:
       description: File content
       required: true
@@ -24,12 +24,20 @@ download_file:
     path:
       description: File path
       required: true
-      example: "/shared/file.txt"
+      example: "/config/test.txt"
 
 delete_file:
-  description: Delete a file
+  description: Delete a file or directory
   fields:
     path:
-      description: File path
+      description: Path to delete
       required: true
-      example: "/shared/file.txt"
+      example: "/config/test.txt"
+
+create_directory:
+  description: Create a new directory
+  fields:
+    path:
+      description: Directory path
+      required: true
+      example: "/config/new_folder"

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>文件管理器</title>
+  <link rel="stylesheet" href="/static/panel.css">
+</head>
+<body>
+  <ha-app-layout>
+    <app-header slot="header" fixed>
+      <app-toolbar>
+        <ha-menu-button></ha-menu-button>
+        <div main-title>文件管理器</div>
+      </app-toolbar>
+    </app-header>
+
+    <div class="content">
+      <file-explorer></file-explorer>
+    </div>
+  </ha-app-layout>
+
+  <script type="module" src="./frontend/file-explorer.js"></script>
+</body>
+</html>

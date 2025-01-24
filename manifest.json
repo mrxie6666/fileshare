@@ -1,11 +1,17 @@
 {
   "domain": "fileshare",
   "name": "File Share",
-  "version": "1.0.0",
-  "documentation": "https://github.com/mrxie6666/fileshare",
+  "version": "1.0",
+  "documentation": "https://www.example.com",
   "dependencies": [],
-  "codeowners": ["@yourgithub"],
+  "codeowners": [],
   "requirements": [],
+  "config_flow": true,
   "iot_class": "local_polling",
-  "config_flow": true
+  "panel": {
+    "component_name": "fileshare",
+    "icon": "mdi:folder",
+    "title": "文件管理器",
+    "admin": true
+  }
 }
